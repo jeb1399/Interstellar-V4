@@ -342,11 +342,12 @@ var StarField = /** @class */ (function () {
                 this.drawMouseControl();
             }
             else {
-                // when mouse stops moving, start fading out the opacity slowly
-                // TODO: make it actually time based so it fades out over the period you pass it
-                // just kinda hacked in a rough approximation by feel on my machine lol
-                // good enough for now
-                this.mouseControlAlpha -= (0.25 * this.deltaTime) / this.UIFadeDelay;
+                // when mouse stops moving, start fading out the opacity slowly over a given duration
+                const fadeOutRate = 1 / this.UIFadeDelay;
+                this.mouseControlAlpha -= fadeOutRate * this.deltaTime;
+                if (this.mouseControlAlpha < 0) {
+                  this.mouseControlAlpha = 0;
+                }
                 this.drawMouseControl();
             }
         }
