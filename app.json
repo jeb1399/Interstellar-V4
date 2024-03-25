@@ -1,11 +1,8 @@
 {
-  "name": "math",
-  "description": "Mathematics.",
-  "repository": "https://github.com/interstellarnetwork/interstellar",
-  "logo": "https://github.com/interstellarnetwork/interstellar/blob/main/static/assets/images/branding/favicon/in.png",
-  "keywords": [
-    "school",
-    "interstellar",
-    "ultraviolet"
-  ]
+  "name": "edu",
+  "description": "?",
+  "repository": "https://github.com/jeb1399/Interstellar-V4.git",
+  "logo": "https://avatars.githubusercontent.com/u/103917385",
+  "keywords": ["school", "math", "history"],
+  "image": "heroku/nodejs"
 }
