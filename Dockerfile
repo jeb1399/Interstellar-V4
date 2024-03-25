@@ -1,6 +1,4 @@
-# syntax=docker/dockerfile:1
-
-FROM node:19-bullseye
+FROM node:iron-bookworm-slim
 ENV NODE_ENV=production
 
 WORKDIR /app
